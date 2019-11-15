@@ -17,5 +17,6 @@ public class App extends ResourceConfig{
         URI baseUri = UriBuilder.fromUri("http://localhost/").port(8080).build();
         ResourceConfig config = new App();
         HttpServer server = JdkHttpServerFactory.createHttpServer(baseUri, config);
+        System.out.println("Started...");
     }
 }
